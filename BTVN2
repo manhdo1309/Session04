@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <math.h>
+int main(){
+	int angle1, angle2, angle3;
+	printf("Nhap vao 3 canh cua tam giac: ");
+	scanf("%d %d %d", &angle1, &angle2, &angle3);
+	int sum1 = angle1 + angle2;
+	int sum2 = angle2 + angle3;
+	int sum3 = angle1 + angle3;
+	if((sum1 > angle3 || sum2 > angle1 || sum3 > angle2) && (angle1 != angle2 && angle1 != angle3 && angle2 != angle3))
+	{
+		printf("Day la tam giac thuong\n");
+	}
+	if(angle1 == angle2 && angle1 != angle3|| angle2 == angle3 && angle2 != angle1 || angle1 == angle3 && angle1 != angle2)
+	{
+		printf("Day la tam giac can\n");
+	}
+	if(pow(sum1, 2) == pow(angle3, 2) || pow(sum2, 2) == pow(angle1, 2) || pow(sum3, 2) == pow(angle2, 2))
+	{
+		printf("Day la tam giac vuong\n");
+	}
+	if((angle1 == angle2 || angle2 == angle3 || angle1 == angle3) && (pow(sum1, 2) == pow(angle3, 2) || pow(sum2, 2) == pow(angle1, 2) || pow(sum3, 2) == pow(angle2, 2)))
+	{
+		printf("Day la tam giac vuong can\n");
+	}
+	if(angle1 == angle2 & angle1 == angle3 && angle2 == angle3)
+	{
+		printf("Day la tam giac deu");
+	}
+}
