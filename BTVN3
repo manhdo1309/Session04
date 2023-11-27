@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main(){
+	int powerBegin, powerEnd;
+	printf("Nhap vao so dien dau thang va cuoi thang: ");
+	scanf("%d %d", &powerBegin, &powerEnd);
+	int subPower = powerEnd - powerBegin;
+	if(0 <= subPower && subPower < 50)
+	{
+		printf("Hoa don dien thang nay cua ban la %d VND\n", subPower * 10000);
+	}
+	if(50 <= subPower && subPower < 100)
+	{
+		printf("Hoa don dien thang nay cua ban la %d VND\n", subPower * 15000);
+	}
+	if(100 <= subPower && subPower < 150)
+	{
+		printf("Hoa don dien thang nay cua ban la %d VND\n", subPower * 20000);
+	}
+	if(150 <= subPower && subPower < 200)
+	{
+		printf("Hoa don dien thang nay cua ban la %d VND\n", subPower * 25000);
+	}
+	if(200 <= subPower)
+	{
+		printf("Hoa don dien thang nay cua ban la %d VND\n", subPower * 30000);
+	}
+}
