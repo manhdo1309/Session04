@@ -1,0 +1,51 @@
+#include <stdio.h>
+int main(){
+	int number1, number2, number3;
+	printf("Nhap vao 3 so bat ky: ");
+	scanf("%d %d %d", &number1, &number2, &number3);
+	int max;
+	int middle;
+	int min;
+	if(number1 > number2 && number1 > number3 && number2 > number3)
+	{
+		max = number1;
+		middle = number2;
+		min = number3;
+		printf("Thu tu giam dan cua day so la: %d %d %d", max, middle, min);
+	}
+		if(number2 > number1 && number2 > number3 && number1 > number3)
+	{
+		max = number2;
+		middle = number1;
+		min = number3;
+		printf("Thu tu giam dan cua day so la: %d %d %d", max, middle, min);
+	}
+		if(number1 > number2 && number1 > number3 && number3 > number2)
+	{
+		max = number1;
+		middle = number3;
+		min = number2;
+		printf("Thu tu giam dan cua day so la: %d %d %d", max, middle, min);
+	}
+		if(number2 > number1 && number2 > number3 && number3 > number1)
+	{
+		max = number2;
+		middle = number3;
+		min = number1;
+		printf("Thu tu giam dan cua day so la: %d %d %d", max, middle, min);
+	}
+		if(number3 > number2 && number3 > number1 && number2 > number1)
+	{
+		max = number3;
+		middle = number2;
+		min = number1;
+		printf("Thu tu giam dan cua day so la: %d %d %d", max, middle, min);
+	}
+		if(number3 > number2 && number3 > number1 && number1 > number2)
+	{
+		max = number3;
+		middle = number1;
+		min = number2;
+		printf("Thu tu giam dan cua day so la: %d %d %d", max, middle, min);
+	}
+}
