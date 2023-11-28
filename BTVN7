@@ -1,1 +1,26 @@
+#include <stdio.h>
+int main(){
+	int baseShift = 26;
+	int baseSalary;
+	printf("Nhap vao luong co ban: ");
+	scanf("%d VND", &baseSalary);
+	int realShift;
+	printf("Nhap vao so ngay cong thuc te: ");
+	scanf("%d", &realShift);
+	int realSalary;
+	int avgShift;
+	int extraShift;
+	if(realShift <= baseShift)
+	{
+		realSalary = baseSalary * realShift / baseShift;
+		printf("Luong thuc te cua ban la: %d VND", realSalary);
+	}
+	if(realShift > baseShift)
+	{
+		extraShift = realShift - baseShift;
+		avgShift = 3 * extraShift / 2 + realShift;
+		realSalary = baseSalary * avgShift / baseShift;
+		printf("Luong thuc te cua ban la %d VND", realSalary);
+	}
 
+}
